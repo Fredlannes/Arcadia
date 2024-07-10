@@ -8,3 +8,30 @@ h1{
 strong{
     font-family: "indie flower";
 }
+
+.navbar-toggler{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    color: $primary;
+    font-size: 1.1rem;
+}
+.nav-link:hover{
+    color: $secondary;
+}
+
+.connection-text {
+    display: none;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 990px) {
+    .connection-text{
+        display : inline;
+    }
+}
