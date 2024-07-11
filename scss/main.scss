@@ -1,13 +1,13 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import "custom";
 
-h1{
-    font-family: "playfair display";
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-strong{
-    font-family: "indie flower";
-}
+/* ---- header ----*/
 
 .navbar-toggler{
     display: flex;
@@ -30,8 +30,52 @@ strong{
     font-size: 18px;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
     .connection-text{
         display : inline;
     }
 }
+
+/* ---- headline */
+
+#headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 324px;
+    background-image: url(/assets/Images/Headline.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.headline-content h1{
+    font-family: "indie flower";
+    color: $primary;
+    font-size: 3em;
+}
+
+.headline-content p{
+    font-family: "playfair display";
+    font-size: 2em;
+}
+
+
+
+@media screen and (min-width: 992px){
+    #headline{
+        height: 800px;
+    }
+    .headline-content h1{
+        font-size: 6em;
+        padding: 1em;
+    }
+    .headline-content p{
+        font-size: 3em;
+        padding: 1em;
+    }
+
+}
+
+
