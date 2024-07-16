@@ -7,20 +7,27 @@ html, body{
     box-sizing: border-box;
 }
 
-h1,h2,h4 {
+h1,h2,h3,h4 {
     font-family: "playfair display";
 }
 
-button {
-    border-radius: 50%; 
+/* --- boutons liens du site ----*/
+
+.btn{
+    color: $dark;
+    background-color: $primary;
+}
+    .btn:hover{
+    border-color: $primary;
+    background-color: transparent;
 }
 
 /* ---- header ----*/
 
 .navbar-toggler{
     display: flex;
-    width: 2em;
-    height: 2em;
+    width: 2.4em;
+    height: 2.4em;
     align-items: center;
     justify-content: center;
 }
@@ -33,6 +40,10 @@ button {
     color: $secondary;
 }
 
+.btn-connection {
+    background-color: transparent;
+    border-color: transparent;
+}
 .connection-text {
     display: none;
     font-size: 18px;
@@ -44,7 +55,7 @@ button {
     }
 }
 
-/* ---- headline */
+/* ---- headline -----*/
 
 #headline {
     display: flex;
@@ -70,7 +81,6 @@ button {
 }
 
 
-
 @media screen and (min-width: 992px){
     #headline{
         height: 800px;
@@ -86,7 +96,7 @@ button {
 
 }
 
-
+/* ---- service ---- */
 .card{
     display: flex;
     align-items: center;
@@ -96,7 +106,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: "indie flower";
 
     &.card-resto{
         background-image: url(/assets/Images/Restaurant.jpg);
@@ -108,3 +117,39 @@ button {
         background-image: url(/assets/Images/Petit\ train.jpg);
     }
 }
+.card h3{
+    font-family: "indie flower";
+}
+
+/*---- footer ----*/
+
+footer {
+    font-family: "playfair display";
+}
+
+.mentions{
+    font-family: $font-family-sans-serif;
+}
+
+#backToTop{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    color: $primary;
+    border-color: $primary;
+    background-color: transparent;
+    z-index: 1;
+
+    &:hover{
+        color: $dark;
+        background-color: $primary;
+        
+    }
+}
+
