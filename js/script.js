@@ -21,6 +21,8 @@ const buttonScrollFunction = () => {
 } 
 window.addEventListener("scroll", buttonScrollFunction);
 
+// fonction pour masquer la barre de menu
+
 let scrollFromTop = document.documentElement.scrollTop
 
 document.addEventListener("scroll", navScrollFunction);
