@@ -70,15 +70,17 @@ h1,h2,h3,h4 {
     background-position: center;
 }
 
-.headline-content h1{
-    font-family: "indie flower";
-    color: $primary;
-    font-size: 3em;
-}
-
-.headline-content p{
-    font-family: "playfair display";
-    font-size: 2em;
+.headline-content{
+    h1{
+        font-family: "indie flower";
+        color: $primary;
+        font-size: 3em;
+    }
+    
+    p{
+        font-family: "playfair display";
+        font-size: 2em;
+    }
 }
 
 
